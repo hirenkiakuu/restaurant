@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+header {
+    margin-top: 8px;
+}
+
+.headerup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 80px;
+}
+
+.headerup__time-info {
+    font-weight: 600;
+    font-style: 18px;
+}
+
+.headerup__time-info {
+    margin-right: 168px;
+}
+
+.headerup__time-info p + p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.headerup__time-info span {
+    font-weight: 600;
+    font-style: 18px;
+    color: #FF2E65;
+}
+
+.headerup__contact-btn {
+    background: #F3F3F7;
+    width: 197px;
+    height: 44px;
+    padding: 7px 27px 7px 26px;
+    border-radius: 28px;
+    display: flex;
+    align-items: center;
+    color: #696F7A;
+    margin-right: 28px;
+    transition: linear .3s;
+}
+
+.headerup__contact-btn:hover {
+    color: #FF2E65;
+    cursor: pointer;
+}
+
+.headerup__contact-btn p {
+    font-weight: 700;
+    size: 14px;
+    
+    margin: 0;
+}
+
+.headerup__contacts {
+    font-size: 26px;
+    color: #FF2E65;
+    font-weight: 700;
+}
+
+.headerdown {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerdown-list {
+    display: flex;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.headerdown-list__item {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.headerdown-list__item:hover {
+    color: #FF2E65;
+    
+}
+
+.headerdown-list__item:last-child {
+    margin-right: 59px;
+}
+
+.login {
+    color: #696F7A;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 30px;
+}
+
+.login__container {
+    width: 54px;
+}
+
+.cart {
+    width: 160px;
+    height: 42px;
+    background-color: #FF2E65;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cart:hover {
+    color: #FF2E65;
+    background-color: #F3F3F7;
+    
+}
+
+.promo-img {
+    margin-left: -25px;
+}
+
+.location {
+    margin-top: 80px;
+    background: #E3ECF5;
+}
+
+.section-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #FF2E65;
+}
+
+.title__container {
+    display: flex;
+    justify-content: center;
+}
+
+.advantages-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages-list__item:first-child {
+    margin-left: -20px;;
+}
+
+.location-img {
+    margin-bottom: 78px;
+}
