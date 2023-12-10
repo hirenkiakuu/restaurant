@@ -52,6 +52,100 @@
                     </div>
                     
                     <a class="cart">Корзина | 0</a>
+
+                    <!-- <div class="cart-modal">
+                    
+                    </div> -->
+
+                    <div class="overlay"></div>
+                    <div class="cart-popup">
+                        <div class="cart-content">
+                            <h2>Ваша корзина</h2>
+                            <ul class="goods-list">
+                                <!-- <li class="goods-list__item">
+                                    <img src="img/pizza.png" alt="" class="good__item-img">
+                                    <div class="good__item-middle">
+                                        <h2 class="good__item-title">С креветками и трюфелями</h2>
+                                        <div class="good__item-quantity-control">
+                                            <div class="good__item-quantity-minus">-</div>
+                                            <p class="quantity">1</p>
+                                            <div class="good__item-quantity-minus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="good__item-right">
+                                        <div class="good__item-delete">
+                                            <img src="img/bin.png" alt="" class="delete-img">
+                                        </div>
+                                        <p class="good__item-price">120 ₽</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="goods-list__item">
+                                    <img src="img/pizza.png" alt="" class="good__item-img">
+                                    <div class="good__item-middle">
+                                        <h2 class="good__item-title">С креветками и трюфелями</h2>
+                                        <div class="good__item-quantity-control">
+                                            <div class="good__item-quantity-minus">-</div>
+                                            <p class="quantity">1</p>
+                                            <div class="good__item-quantity-minus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="good__item-right">
+                                        <div class="good__item-delete">
+                                            <img src="img/bin.png" alt="" class="delete-img">
+                                        </div>
+                                        <p class="good__item-price">120 ₽</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="goods-list__item">
+                                    <img src="img/pizza.png" alt="" class="good__item-img">
+                                    <div class="good__item-middle">
+                                        <h2 class="good__item-title">С креветками и трюфелями</h2>
+                                        <div class="good__item-quantity-control">
+                                            <div class="good__item-quantity-minus">-</div>
+                                            <p class="quantity">1</p>
+                                            <div class="good__item-quantity-minus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="good__item-right">
+                                        <div class="good__item-delete">
+                                            <img src="img/bin.png" alt="" class="delete-img">
+                                        </div>
+                                        <p class="good__item-price">120 ₽</p>
+                                    </div>
+                                </li>
+
+                                <li class="goods-list__item">
+                                    <img src="img/pizza.png" alt="" class="good__item-img">
+                                    <div class="good__item-middle">
+                                        <h2 class="good__item-title">С креветками и трюфелями</h2>
+                                        <div class="good__item-quantity-control">
+                                            <div class="good__item-quantity-minus">-</div>
+                                            <p class="quantity">1</p>
+                                            <div class="good__item-quantity-minus">+</div>
+                                        </div>
+                                    </div>
+                                    <div class="good__item-right">
+                                        <div class="good__item-delete">
+                                            <img src="img/bin.png" alt="" class="delete-img">
+                                        </div>
+                                        <p class="good__item-price">120 ₽</p>
+                                    </div>
+                                </li>
+
+                                 -->
+                            </ul>
+                            <div class="summary">
+                                <p>Сумма заказа:</p>
+                                <p class="summary-money">0 ₽</p>
+                            </div>
+                            
+                            <div class="buy-btn unactive">Оплатить</div>
+                            
+                        </div>
+                    </div>
+
                 </div>
                 
             </div>
@@ -67,7 +161,76 @@
 
     <main class="menu">
         <div class="container">
+            <div class="title__container">
+                <h2 class="section-title">Меню</h2>
+            </div>
+            <div class="filter-panel">
+                <div class="filter-btn active" data-category="all">Все блюда</div>
+                <div class="filter-btn" data-category="pizza">Пицца</div>
+                <div class="filter-btn" data-category="soup">Супы</div>
+                <div class="filter-btn" data-category="another">Остальное</div>
+            </div>
+            <ul class="goods-cards-list">
+                <!-- <li class="goods-card">
+                    <img src="img/pizza.png" alt="" class="good-img">
+                    <h3 class="good-title">С креветками и трюфелями</h3>
+                    <p class="good-description">
+                        Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+                    </p>
+                    <div class="good-add-to-cart">
+                        <p class="good-price">от 600 ₽</p>
+                        <div class="add-to-cart-btn">В корзину</div>
+                    </div>
+                </li>
 
+                <li class="goods-card">
+                    <img src="img/pizza.png" alt="" class="good-img">
+                    <h3 class="good-title">С креветками и трюфелями</h3>
+                    <p class="good-description">
+                        Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+                    </p>
+                    <div class="good-add-to-cart">
+                        <p class="good-price">от 600 ₽</p>
+                        <div class="add-to-cart-btn">В корзину</div>
+                    </div>
+                </li>
+
+                <li class="goods-card">
+                    <img src="img/pizza.png" alt="" class="good-img">
+                    <h3 class="good-title">С креветками и трюфелями</h3>
+                    <p class="good-description">
+                        Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+                    </p>
+                    <div class="good-add-to-cart">
+                        <p class="good-price">от 600 ₽</p>
+                        <div class="add-to-cart-btn">В корзину</div>
+                    </div>
+                </li>
+
+                <li class="goods-card">
+                    <img src="img/pizza.png" alt="" class="good-img">
+                    <h3 class="good-title">С креветками и трюфелями</h3>
+                    <p class="good-description">
+                        Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+                    </p>
+                    <div class="good-add-to-cart">
+                        <p class="good-price">от 600 ₽</p>
+                        <div class="add-to-cart-btn">В корзину</div>
+                    </div>
+                </li>
+
+                <li class="goods-card">
+                    <img src="img/pizza.png" alt="" class="good-img">
+                    <h3 class="good-title">С креветками и трюфелями</h3>
+                    <p class="good-description">
+                        Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+                    </p>
+                    <div class="good-add-to-cart">
+                        <p class="good-price">от 600 ₽</p>
+                        <div class="add-to-cart-btn">В корзину</div>
+                    </div>
+                </li> -->
+            </ul>
         </div>
     </main>
 
@@ -96,9 +259,72 @@
         </div> 
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
-            
+            <div class="footerup">
+                <div class="footer-logo">
+                    <img src="img/footerlogo.png" alt="" class="footer-logo-img">
+                    <img src="img/footerlogotext.png" alt="" class="footer-logo-text">
+                </div>
+                <p>Остались вопросы? Мы всегда на связи:</p>
+            </div>
+            <div class="footermiddle">
+                <div class="footermiddle-questions">
+                    <a href="#">Калорийность и состав</a>
+                    <a href="#">Правовая информация</a>
+                </div>
+
+                <div class="footermiddle-contacts">
+                    <a href="" class="footermiddle-contacts-btn">
+                        <img src="img/viber.png" alt="">
+                    </a>
+
+                    <a href="" class="footermiddle-contacts-btn">
+                        <img src="img/skype.png" alt="">
+                    </a>
+
+                    <a href="" class="footermiddle-contacts-btn">
+                        <img src="img/chat.png" alt="">
+                    </a>
+
+                    <a href="" class="footermiddle-contacts-btn">
+                        <img src="img/telegram.png" alt="">
+                    </a>
+
+                    <a href="" class="footermiddle-contacts-btn">
+                        <img src="img/facebook.png" alt="">
+                    </a>
+
+                    <a href="" class="footermiddle-contacts-btn">
+                        <img src="img/vk.png" alt="">
+                    </a>
+
+                    <a href="" class="footermiddle-contacts-btn">
+                        Написать нам
+                    </a>
+                </div>
+            </div>
+
+            <div class="footerdown">
+                <p class="policy">YaBao Все праав защищены © 2023</p>
+                <div class="payments">
+                    <ul class="payments-list">
+                        <li class="payments-list__item">
+                            <img src="img/visa.png" alt="">
+                        </li>
+                        <li class="payments-list__item">
+                            <img src="img/paypal.png" alt="">
+                        </li>
+                        <li class="payments-list__item">
+                            <img src="img/mastercard.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="headerup__contact-btn" href="#">
+                    <p>Заказать звонок</p>
+                </a>
+            </div>
         </div>
     </footer>
 </body>
