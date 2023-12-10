@@ -16,19 +16,16 @@ function getGoods() {
     .then(data => {allGoods = data})
     .then(() => {
         renderGoodsCards(allGoods);
-        console.log(allGoods);
     });
 }
 
 const cart = {
     cartGoods: initialCart,
     addToCart(idx) {
-        console.log(idx);
         const item = this.cartGoods.find(good => good.id === idx);
         if (item) {
             this.increaseGood(idx);
         } else {
-            console.log(allGoods);
             const {id, category, title, descripton, price, img} = allGoods.find(good => good.id === idx);
             this.cartGoods.push({id, category, title, descripton, price, img, count: 1});
             this.renderCart();
@@ -58,7 +55,6 @@ const cart = {
     deleteGood(idx) {
         this.cartGoods = this.cartGoods.filter(good => good.id !== idx);
         this.renderCart();
-        console.log(this.cartGoods);
         this.updateLocalStorage();
     },
     renderCart() {
@@ -85,9 +81,6 @@ const cart = {
             </div>
             `;
 
-            // if (this.cartGoods.length) {
-            //     buyButton.classList.remove('unactive');
-            // }
             this.cartGoods.length ? buyButton.classList.remove('unactive') : buyButton.classList.add('unactive');
             
             cartGoodsList.append(good);
@@ -151,7 +144,6 @@ function renderGoodsCards(goodsArray) {
 
 function filterGoods(field, value) {
     renderGoodsCards(allGoods.filter(good => good[field] === value));
-    console.log(1);
 }
 
 const filterButtons = document.querySelectorAll('.filter-btn');
@@ -182,7 +174,6 @@ function handleFilterClick(event) {
 cartButton.addEventListener('click', () => {
     document.querySelector('.overlay').classList.add('active');
     document.querySelector('.cart-popup').classList.add('active');
-    console.log(cart.cartGoods);
 });
 
 document.addEventListener('mouseup', (e) => {
